@@ -1,9 +1,10 @@
 # Java Certification Study Guide and Notes
 ## OCA (Programmer I - 1Z0-808) 
-The `OCA/` directory will contain all notes for the 1st Java certifcation. 
+The `OCA/` directory will contain all notes for the 1st Java certifcation. The book used for studying is "**OCA: Oracle Certified Associate Java SE 8 Programmer I**" written by _Jeanne Boyarsky and Scott Selikoff_. For **Exam 1Z0-808**. Copy right 2015 by John Wiley & Sons, Inc., Indianapois, Indiana. 
+ISBN: 978-1-118-95740-0. 
 
 ## OCP (Programmer II - 1Z0-809)
-After the first test, a folder will be created for this test. 
+After the first test, a directory will be created for this test. 
 
 ## System Requirements
 This exam is for the latest release version of `Java 8`. Please be sure all code is written, compiled, and run in `Java 8`. You will need to install the `jdk_1_8` to develop java files. The jdk will include the `jre` which you need to run java files. Make sure that the commands `javac` and `java` are part of your system's environment variables. 
@@ -18,12 +19,15 @@ java version "1.8.0_172"
 Java(TM) SE Runtime Environment (build 1.8.0_172-b11)
 Java HotSpot(TM) 64-Bit Server VM (build 25.172-b11, mixed mode)
 ```
-_Make sure the `java version` is "1.8.^"_
+_Make sure the `java version` and `Java(TM) SE Runtime Environment` should both be "1.8.^"_
 
 ## Writing and Testing code
-An IDE should not be used during exam preparation. Most questions are trick questions and will most likely contain an option for `code does not compile`. By using a plain text editor (like wordpad or gedit), it will force you to know whether or not the code will compile. 
+An IDE should not be used during exam preparation. Use a text editor with no syntax highlighting on. Most questions are trick questions and will most likely contain an option for `code does not compile`. By using a plain text editor (like wordpad or gedit), it will force you to know whether or not the code will compile. 
 
-#### How to run Java code (latest version of Java 8)
+## Directory Structure
+Each test directory (OCA and OCP) will have a directory for each chapter. Each chapter directory will have a `*-notes.md` file with all of the chatper's notes, and a `java/` directory for all java code written for studying and practice purposes. 
+
+## How to run Java code (latest version of Java 8)
 All the following commands are for linux. Make the desired amount of Java files
 ```
 # single file
