@@ -245,7 +245,7 @@ Java has 8 _primative_ types. **YOU MUST KNOW THESE FOR THE EXAM**.
 | `int` | 32-bit integral value | `123` |
 | `long` | 64-bit integral value | `123` |
 | `float` | 32-bit floating-point value | `123.45f` |
-| `double` | 64bit floating-point value | `123.456` |
+| `double` | 64-	bit floating-point value | `123.456` |
 | `char` | 16-bit Unicode value | `'a'`
 
 - `float` and `double` are used for floatin-point (decimal) values
@@ -271,10 +271,10 @@ Java allows you to specify digits in several formats:
 >_**TIP**: You need to memorize these_
 - base 10 (digits 0-9) is the method we are use to using (and used above)
 - octal (digits 0-7), which uses the number 0 as a prefix - for example, `017`
-- hexadecimal (digits 0-9 and latters A-F), which uses the number 0 followed by `x` or `X` as a prefix - for example, `0xFF`
+- hexadecimal (digits 0-9 and letters A-F), which uses the number 0 followed by `x` or `X` as a prefix - for example, `0xFF`
 - binary (digits 0 & 1), which uses the number 0 followed by a `b` or `B` as a prefix - for example, `0b10`
 
-Something add in Java 7 is the ability to use _underscores_ in literals. 
+Something added in Java 7 is the ability to use _underscores_ in literals. 
 ```java
 double legal = 1_00_0.0_0;   // this is legal
 double notAtStart = _100.00; // DOES NOT COMPILE
@@ -316,7 +316,7 @@ int bad = len.length(); // DOOES NOT COMPILE
 
 ## Declaring and Initializing Variables 
 
-A _variable_ is a name for apiece of memory that stores data. 
+A _variable_ is a name for a piece of memory that stores data. 
 
 ---
 
@@ -361,7 +361,7 @@ _Identifier_ names have a few naming rules:
 3. You cannot use the same name as a Java _reserved word_. As you might imagine, a reserved word is a keyword that Java has reserved so that you not allowed to use it. Remember that Java is case sensitive, so you can use versions of the keywords that only differ in case (this is a bad idea, though).
 
 >_**TIP**: Memorize these rules and watch for invalid identifier names. When you see an identifier with an abnormal symbol or name, make sure to check the rules._
-```javascript
+```
 // valid identifiers
 okidentifiter
 $OK2Identifier
@@ -392,7 +392,7 @@ public int notValid() {
 ```
 ```java
 // this version will compile
-// the compile can figure out that you initialize 'x' before you use it
+// the compiler can figure out that you initialize 'x' before you use it
 public int notValid() { 
   int y = 10;
   int x;
@@ -400,6 +400,7 @@ public int notValid() {
   return x + y; 
 }
 ```
+Note this is a method. If these were instance variables, they would automatically be initialized (explained in the next section).
 
 The compiler will also check each branch of code inside the method. Each branch must intialize the variables if it is going to compile. 
 ```java
@@ -477,7 +478,7 @@ public void eatIfHungry(boolean hungry) {
 >_**KNOW**: memorize these scope rules_
 - Local variables: in scope from declaration to end of block
 - Instance variables: in scope from declaration until object garbage collected
-- Class variables: in scopde from delcaration until program ends (because these are static)
+- Class variables: in scope from delcaration until program ends (because these are static)
 
 ---
 ## Ordering Elements in a Class (p. 34)
@@ -536,7 +537,7 @@ All objects are stored in your program memory's _heap._
 1. The object no longer has any references pointing to it. 
 2. All references to the object have gone out of scope. 
 
-Remember the that objects sit on the heap and can only be accessed through reference. A reference may or may not be created on the heap. All references are the same size, no matter what their data type is, and are accessed by their variable name. Objects are always on the heap. They have no name and can only be accessed via a reference. Objects vary in size depending on their class defintion. 
+Remember that objects sit on the heap and can only be accessed through reference. A reference may or may not be created on the heap. All references are the same size, no matter what their data type is, and are accessed by their variable name. Objects are always on the heap. They have no name and can only be accessed via a reference. Objects vary in size depending on their class defintion. 
 
 >_**TIP:** When you get asked a question about garbage collection on the exam, trying drawing what is going on._
 
@@ -573,12 +574,12 @@ public class Finalizer {
 ## Benefits of Java (p. 39)
 
 >_**KNOW:** You need to know these for the exam_
-> - **Object Oriented**: Jav is an object-oriented language, which means all code is defined in classes and most of those classes can be instantiated into objects. Java allows for functional programming within a class, but object oriented is still the main organization of code. 
-> - **Encapsulation**: Java supports access modifies to protect data from unintended access and modification.
+> - **Object Oriented**: Java is an object-oriented language, which means all code is defined in classes and most of those classes can be instantiated into objects. Java allows for functional programming within a class, but object oriented is still the main organization of code. 
+> - **Encapsulation**: Java supports access modifiers to protect data from unintended access and modification.
 > - **Platform Independent**: Java is an interpreted language because it gets compiled to bytecode. Java is a "write once, run anywhere" language because it only gets compiled once. If asked on the exam remember, the same class files run everywhere. (It is slightly different on the OCP exam).
 > - **Robust**: One of the majoy advantages of java over C++ is that it prevents memory leaks because java manages its own memory. 
-> - **Simple**: Jav was intended to be simpler than C++. 
-> - **Secure**: Because java runs inside the JVM, it creates a sandbox that makes it hard for java code to do evil things to the machine it is running on.
+> - **Simple**: Java was intended to be simpler than C++. 
+> - **Secure**: Because Java runs inside the JVM, it creates a sandbox that makes it hard for java code to do evil things to the machine it is running on.
 
 
 
