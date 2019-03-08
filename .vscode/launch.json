@@ -1,0 +1,18 @@
+{
+	"configurations": [
+		{
+			"type": "java",
+			"name": "CodeLens (Launch) - Loops",
+			"request": "launch",
+			"mainClass": "Loops",
+			"projectName": "java-certs_a39f97e2"
+		},
+		{
+			"type": "java",
+			"name": "CodeLens (Launch) - Strings",
+			"request": "launch",
+			"mainClass": "Strings",
+			"projectName": "java-certs_a39f97e2"
+		}
+	]
+}
