@@ -2,6 +2,13 @@
 	"configurations": [
 		{
 			"type": "java",
+			"name": "CodeLens (Launch) - Test",
+			"request": "launch",
+			"mainClass": "Test",
+			"projectName": "java-certs_d0fdeca7"
+		},
+		{
+			"type": "java",
 			"name": "CodeLens (Launch) - Parent",
 			"request": "launch",
 			"mainClass": "Parent",
